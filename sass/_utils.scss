@@ -112,4 +112,8 @@
             margin-bottom: 20px;
         }
     }
+
+    &:hover {
+        background-color: lighten($color: $Card-BG, $amount: 10);
+    }
 }
