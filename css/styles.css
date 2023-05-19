@@ -1,7 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 .container {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
+}
+
+.box {
+  width: 22%;
+  background-color: hsl(228, 28%, 20%);
+  padding: 40px;
+  position: relative;
+  z-index: 1;
+  top: 150px;
 }
 
 * {
@@ -21,12 +30,12 @@ body {
   padding: 20px;
   display: flex;
   justify-content: space-between;
-  position: relative;
+  position: absolute;
   background-color: hsl(232, 19%, 15%);
   padding: 50px;
   padding-left: 100px;
   padding-right: 100px;
-  padding-bottom: 100px;
+  padding-bottom: 150px;
 }
 .top .left h2 {
   font-weight: 700;
@@ -96,4 +105,9 @@ body {
 }
 .top .right .slider.round:before {
   border-radius: 50%;
+}
+
+.dashboard {
+  display: flex;
+  justify-content: space-evenly;
 }

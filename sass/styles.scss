@@ -18,12 +18,12 @@ body {
     padding: 20px;
     display: flex;
     justify-content: space-between;
-    position: relative;
+    position: absolute;
     background-color: $Top-BG-Pattern;
     padding: 50px;
     padding-left: 100px;
     padding-right: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 150px;
 
     .left {
         h2 {
@@ -108,4 +108,9 @@ body {
         border-radius: 50%;
         }
     }
+}
+
+.dashboard {
+    display: flex;
+    justify-content: space-evenly;
 }

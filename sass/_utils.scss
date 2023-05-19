@@ -1,4 +1,13 @@
 .container {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
+}
+
+.box {
+    width: 22%;
+    background-color: $Card-BG;
+    padding: 40px;
+    position: relative;
+    z-index: 1;
+    top: 150px;
 }
