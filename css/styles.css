@@ -10,12 +10,12 @@
   padding: 40px;
   padding-bottom: 20px;
   position: relative;
-  z-index: 1;
   top: 150px;
   display: flex;
   flex-direction: column;
   align-items: center;
   border-radius: 5px;
+  border-top: 5px solid;
 }
 .box .username {
   display: flex;
@@ -55,6 +55,47 @@
   margin-left: 5px;
   color: hsl(163, 72%, 41%);
 }
+.box:hover {
+  background-color: #374062;
+}
+
+.small-box {
+  width: 20%;
+  background-color: hsl(228, 28%, 20%);
+  padding: 20px;
+  padding-bottom: 5px;
+  margin-right: 15px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+.small-box span {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.small-box span p {
+  font-size: 15px;
+  color: hsl(228, 34%, 66%);
+  font-weight: 700;
+}
+.small-box span .down {
+  margin-top: 30px;
+}
+.small-box span .down p {
+  color: hsl(356, 69%, 56%);
+  font-size: 10px;
+}
+.small-box span .up {
+  margin-top: 30px;
+}
+.small-box span .up p {
+  font-size: 10px;
+  color: hsl(163, 72%, 41%);
+  margin-left: 5px;
+}
+.small-box span:first-of-type {
+  margin-bottom: 20px;
+}
 
 * {
   box-sizing: border-box;
@@ -70,14 +111,13 @@ body {
 
 .top {
   width: 100%;
-  padding: 20px;
   display: flex;
   justify-content: space-between;
   position: absolute;
   background-color: hsl(232, 19%, 15%);
-  padding: 50px;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding: 40px;
+  padding-left: 90px;
+  padding-right: 90px;
   padding-bottom: 150px;
 }
 .top .left h2 {
@@ -154,4 +194,38 @@ body {
 .dashboard {
   display: flex;
   justify-content: space-evenly;
+}
+.dashboard .fb {
+  border-color: hsl(208, 92%, 53%);
+}
+.dashboard .twt {
+  border-color: hsl(203, 89%, 53%);
+}
+.dashboard .ig {
+  border-color: hsl(329, 74%, 53%);
+}
+.dashboard .yt {
+  border-color: hsl(348, 97%, 39%);
+}
+.dashboard .yt .status p {
+  color: hsl(356, 69%, 56%);
+}
+
+.overview {
+  position: absolute;
+  max-width: 92.2%;
+  top: 390px;
+  padding-bottom: 10px;
+}
+.overview h3 {
+  margin-left: 30px;
+}
+.overview .small-boxes {
+  width: 100%;
+  margin-left: -5px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }

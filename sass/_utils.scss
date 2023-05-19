@@ -9,12 +9,12 @@
     padding: 40px;
     padding-bottom: 20px;
     position: relative;
-    z-index: 1;
     top: 150px;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 5px;
+    border-top: 5px solid;
 
     .username {
         display: flex;
@@ -61,6 +61,55 @@
             font-weight: $Big;
             margin-left: 5px;
             color: $Lime-Green;
+        }
+    }
+
+    &:hover {
+        background-color: lighten($color: $Card-BG, $amount: 10);
+    }
+}
+
+.small-box {
+    width: 20%;
+    background-color: $Card-BG;
+    padding: 20px;
+    padding-bottom: 5px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+
+    span {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        p {
+            font-size: 15px;
+            color: $Text-dark;
+            font-weight: $Big;
+        }
+
+        .down {
+            margin-top: 30px;
+            p {
+            color: $Bright-Red;
+            font-size: 10px;
+            
+            }
+            
+        }
+        
+        .up {
+            margin-top: 30px;
+            p {
+            font-size: 10px;
+            color: $Lime-Green;
+            margin-left: 5px;
+            }
+        }
+
+        &:first-of-type {
+            margin-bottom: 20px;
         }
     }
 }
