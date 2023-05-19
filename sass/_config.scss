@@ -3,6 +3,7 @@ $BG: hsl(230, 17%, 14%);
 $Top-BG-Pattern: hsl(232, 19%, 15%);
 $Card-BG: hsl(228, 28%, 20%);
 $Text:hsl(0, 0%, 100%);
+$Text-dark:hsl(228, 34%, 66%);
 $Lime-Green: hsl(163, 72%, 41%);
 $Bright-Red: hsl(356, 69%, 56%);
 $Facebook: hsl(208, 92%, 53%);
@@ -20,7 +21,8 @@ $Light-Text-gr:hsl(228, 12%, 44%);
 $Light-Text-dk:hsl(230, 17%, 14%);
 
 // Typography
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&display=swap');
 $font-family: 'Inter', sans-serif;
 $Big: 700;
-$Small: 400;
+$Small: 200;
+$Medium: 400;
