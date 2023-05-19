@@ -84,6 +84,7 @@
 .small-box span .down p {
   color: hsl(356, 69%, 56%);
   font-size: 10px;
+  margin-left: 5px;
 }
 .small-box span .up {
   margin-top: 30px;
