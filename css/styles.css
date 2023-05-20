@@ -101,6 +101,26 @@
   background-color: #374062;
 }
 
+.light-box {
+  background-color: hsl(227, 47%, 96%);
+}
+.light-box .username p {
+  color: hsl(228, 12%, 44%);
+}
+.light-box p:nth-child(3) {
+  color: hsl(230, 17%, 14%);
+}
+.light-box:hover {
+  background-color: #dde2f3;
+}
+
+.light-small-box {
+  background-color: hsl(227, 47%, 96%);
+}
+.light-small-box span p {
+  color: hsl(230, 17%, 14%);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -111,6 +131,11 @@ body {
   font-family: "Inter", sans-serif;
   background-color: hsl(230, 17%, 14%);
   color: hsl(0, 0%, 100%);
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+body::-webkit-scrollbar {
+  display: none;
 }
 
 .top {
@@ -232,4 +257,19 @@ body {
   align-items: center;
   justify-content: space-evenly;
   flex-wrap: wrap;
+}
+
+.light {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(230, 17%, 14%);
+}
+.light .light-top {
+  background-color: hsl(227, 47%, 96%);
+}
+.light .light-top p {
+  color: hsl(228, 12%, 44%);
+}
+
+.light-overview h3 {
+  color: hsl(228, 12%, 44%);
 }

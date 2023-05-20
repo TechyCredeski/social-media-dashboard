@@ -117,3 +117,32 @@
         background-color: lighten($color: $Card-BG, $amount: 10);
     }
 }
+
+//Light Theme
+.light-box {
+    background-color: $Light-Card-BG;
+    
+    .username {
+        p{
+            color: $Light-Text-gr;
+        }
+    }
+
+    p:nth-child(3) {
+        color: $Light-Text-dk;
+    }
+
+    &:hover {
+        background-color: darken($color: $Light-Card-BG, $amount: 5);
+    }
+}
+
+.light-small-box {
+    background-color: $Light-Card-BG;
+
+    span {
+        p {
+            color: $Light-Text-dk;
+        }
+    }
+}

@@ -11,6 +11,14 @@ body {
     font-family: $font-family;
     background-color: $BG;
     color: $Text;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    -ms-overflow-style: none; 
+    scrollbar-width: none;  
+    
 }
 
 .top {
@@ -155,5 +163,27 @@ body {
         align-items: center;
         justify-content: space-evenly;
         flex-wrap: wrap;
+    }
+}
+
+//Light Theme Styles
+.light {
+    background-color: $Light-BG;
+    color: $Light-Text-dk;
+
+
+    .light-top {
+        background-color: $Light-Card-BG;
+
+        p{
+            color: $Light-Text-gr;
+        }
+    }
+}
+
+
+.light-overview {
+    h3 {
+        color: $Light-Text-gr;
     }
 }
