@@ -126,25 +126,26 @@
     width: 90%;
   }
   .top {
-    max-width: 100%;
+    width: 100%;
     flex-direction: column;
     justify-content: space-between;
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: -90px;
+    padding-right: -90px;
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
   }
   .top .left {
-    width: 100%;
+    text-align: left;
     margin-bottom: 20px;
     max-width: 100%;
+    padding: 0;
   }
   .top .left h2 {
-    font-size: 1.2rem;
+    font-size: 1.24rem;
     text-align: left;
   }
-  .top .right {
-    margin-left: 0;
+  .top .right p {
+    margin-left: 22px;
   }
   .dashboard {
     flex-direction: column;
@@ -156,14 +157,23 @@
     margin-bottom: 20px;
   }
   .overview {
-    width: 100%;
-  }
-  .small-boxes {
-    flex-direction: column;
-    margin-left: 0;
-  }
-  .small-boxes .small-box {
     width: 90%;
+  }
+  .overview h3 {
+    position: absolute;
+    top: 780px;
+    font-size: 1.5rem;
+    margin-left: -30px;
+  }
+  .overview .small-boxes {
+    flex-direction: column;
+    position: absolute;
+    top: 810px;
+    padding-bottom: 20px;
+  }
+  .overview .small-boxes .small-box {
+    width: 90%;
+    margin-left: 22px;
   }
 }
 * {
